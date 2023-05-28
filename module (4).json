@@ -1,0 +1,55 @@
+{   
+  "id": "tychmaps-wdh-autumn", 
+  "name": "tychmaps-wdh-autumn",
+  "title": "Tych Maps - WDH - Autumn",   
+  "description": "Autumn season maps for the Waterdeep Dragon Heist adventure by Tych Maps",   
+  "version": "1.0.0",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "11",
+  "compatibility": {
+	"minimum": "10", 
+	"verified": "11",
+    "maximum": "11"	
+  },
+  "author": "TychMaps",
+  "authors": [
+    {
+      "name": "TychMaps",
+	  "email": "tychmaps@gmail.com",
+	  "reddit": "u/TychMaps",
+	  "url": "https://www.patreon.com/tychmaps",
+      "discord": "imdtucker#6039"
+    }
+  ],
+  "packs": [
+      {
+      "name": "journals",
+      "label": "Tych Maps WDH Autumn",
+      "path": "/packs/journals.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
+    },
+	{
+      "name": "maps",
+      "label": "Tych WDH Autumn Maps",
+      "path": "packs/maps.db",
+	  "entity": "Scene",
+      "type": "Scene"
+	}
+  ],
+  "esmodules": [
+    "./scripts/init.js"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "scene-packer",
+        "type": "module",
+        "manifest": "https://github.com/League-of-Foundry-Developers/scene-packer/releases/latest/download/module.json"
+      }
+    ]
+  },
+  "manifest": "https://dl.dropboxusercontent.com/s/bflgkydomhp4zqp/module.json?dl=1",
+  "download": "https://drive.google.com/file/d/1M0zft_33DdbfvMCtoQocJCWv_lnYOsGw/view?usp=sharing",
+  "manifestPlusVersion": "1.2.0"
+}
