@@ -1,0 +1,55 @@
+{
+  "id": "tychmaps-dotmm",
+  "name": "tychmaps-dotmm",
+  "title": "Tych Maps - DotMM",
+  "description": "Maps for the Dungeon of the Mad Mage(DotMM) adventure by Tych Maps",
+  "version": "0.5.1",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "11",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11",
+    "maximum": "11"
+  },
+  "author": "TychMaps",
+  "authors": [
+    {
+      "name": "TychMaps",
+	  "email": "tychmaps@gmail.com",
+	  "reddit": "u/TychMaps",
+	  "url": "https://www.patreon.com/tychmaps",
+      "discord": "imdtucker#6039"
+    }
+  ],
+  "packs": [
+    {
+      "name": "journals",
+      "label": "tychmaps dotmm",
+      "path": "/packs/journals.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "maps",
+      "label": "tychmaps dotmm",
+      "path": "/packs/maps.db",
+      "entity": "Scene",
+      "type": "Scene"
+    }
+  ],
+  "esmodules": [
+    "./scripts/init.js"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "scene-packer",
+        "type": "module",
+        "manifest": "https://github.com/League-of-Foundry-Developers/scene-packer/releases/latest/download/module.json"
+      }
+    ]
+  },
+  "manifest": "https://dl.dropboxusercontent.com/s/46bgek1oeevl4il/module.json?dl=1 ",
+  "download": "https://dl.dropboxusercontent.com/s/8oz7omymypx4syp/tychmaps-dotmm-v0.5.1.zip?dl=1",
+  "manifestPlusVersion": "1.2.0"
+}
